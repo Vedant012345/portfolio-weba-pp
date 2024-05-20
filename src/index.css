@@ -1,0 +1,327 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+/* icon styling */
+.icon:hover{
+    color: rgb(3, 224, 3);
+    
+}
+.icon{
+    margin-right: 8px;
+    color: black;
+    
+}
+.icon-part{
+display: flex;
+justify-content: space-between;
+}
+
+/* icon styling end */
+
+
+/* image styling */
+.image {
+    width: 50%;
+    position: relative;
+}
+
+.nav-logo{
+  border-radius: 50%;
+}
+
+img.w-full {
+   
+    margin-top: 15%;
+    margin-left: 20%;
+    margin-bottom: 10%;
+    border-radius: 50%;
+    width: 75%;
+    /* padding-right: 22%; */
+    margin-right: 53%;
+    
+}
+/* image styling */
+
+.md\:w-1\/2.md\:pl-4.flex.flex-col.justify-center {
+    width: 50%;
+    margin-top: 10%;
+}
+/* image styling */
+
+
+hr{
+    color: black;
+}
+
+.experience.row.row-cols-1.row-cols-md-5.g-5 {
+    width: 100%;
+}
+
+/* Media screen for home content that can show in mobile divice*/
+/* Media query for devices with a max width of 320px */
+@media only screen and (max-width: 320px) {
+
+    .flex-col {
+      flex-direction: column;
+      align-items: center;
+      /* Center items horizontally */
+    }
+  
+    .md\:w-1\/2 {
+      width: 100%; /* Make the text content take up full width */
+    }
+  
+    .md\:pl-4 {
+      padding-left: 0; /* Remove left padding */
+    }
+  
+    .icon-part {
+      text-align: center; /* Center the icons */
+    }
+  
+    .image {
+      margin-top: 20px; /* Add margin to separate image from text content */
+    }
+  }
+  
+  /* Media query for devices with a max width of 480px */
+  @media only screen and (max-width: 480px) {
+    .flex-col {
+      flex-direction: column;
+      align-items: center; /* Center items horizontally */
+    }
+  
+    .md\:w-1\/2 {
+      width: 100%; /* Make the text content take up full width */
+    }
+  
+    .md\:pl-4 {
+      padding-left: 0; /* Remove left padding */
+    }
+  
+    .icon-part {
+      text-align: center; /* Center the icons */
+    }
+  
+    .image {
+      margin-top: 20px; /* Add margin to separate image from text content */
+    }
+  }
+  
+  /* Media query for devices with a max width of 768px */
+  @media only screen and (max-width: 768px) {
+
+     
+img.w-full {
+    margin-top: 18%;
+    margin-left: 50%;
+    margin-bottom: -10%;
+    border-radius: 50%;
+    width: 80%;
+    /* padding-right: 22%; */
+    margin-right: 50%;
+}
+
+       .navbar{
+      margin-right: 35%;
+    }
+    .welcome {
+      text-align: center;
+    }
+    .flex-col {
+      flex-direction: column;
+      align-items: center; /* Center items horizontally */
+    }
+  
+    .md\:w-1\/2 {
+      width: 100%; /* Make the text content take up full width */
+    }
+  
+    .md\:pl-4 {
+      padding-left: 0; /* Remove left padding */
+    }
+       .md\:w-1\/2.md\:pl-4.flex.flex-col.justify-center { /*it is mendorary to aad in github*/
+      
+      margin-top: 20%;
+           width: 100%;
+      order: 2;
+  }
+
+      .image.md\:w-1\/2.mb-4.md\:mb-0 {  {/* for set proper image in mobile device*/}
+    margin-right: 100%;
+    width: 111%;
+}
+  
+    .icon-part {
+      text-align: center; /* Center the icons */
+    }
+  
+    .image {
+      margin-top: 20px;
+      margin-right: 100%;/* Add margin to separate image from text content */
+    }
+  }
+
+
+
+
+  /* Avout section css*/
+  .about-hr{
+    color: rgb(3, 34, 34);
+  }
+  h2{
+    color: #2a6f58;
+  }
+  .About-content{
+    /*font-size: larger;*/
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+  }
+  /* Avout section css end*/
+
+
+
+/* card properties */
+  .my-card {
+    transition: transform 0.3s ease;
+  }
+  
+  .my-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-footer button {
+    margin-right: 10px; /* Add space between the buttons */
+    transition: all 0.3s ease; /* Add transition for hover effect */
+  }
+  
+  .card-footer button:hover {
+    transform: scale(1.05); /* Increase size on hover */
+  }
+
+  /* card properties end*/
+  
+
+
+/*media screen of My portfolio for all device i pad also */
+  @media screen and (max-width: 320px) {
+    .row-cols-md-5 > .col {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .row-cols-md-5 > .col {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .portfolio {
+      margin-left: 30px;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      width: 125%;
+    }
+      .experience.row.row-cols-1.row-cols-md-5.g-5 {
+      width: 75%;
+  }
+  }
+  
+  
+  @media screen and (min-width: 768px) {
+    .experience > .col {
+      flex: 0 0 20%;
+      max-width: 20%;
+    }
+    .experience{
+      width: 25%;
+  }
+  }
+  
+ 
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .row-cols-md-5 > .col {
+      flex: 0 0 33.33%;
+      max-width: 33.33%;
+    }
+  }
+
+  /*media screen of My portfolio for all device i pad also */
+  
+
+  .cards {
+    border-radius: 50%; /* Adjust the value to your preference */
+  }
+  
+
+
+
+/* css for contact form */
+
+  .contact-span{
+    font-size: large;
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .Contact form {
+    max-width: 400px; /* Adjust the width of the form as needed */
+    margin: 0 auto; /* Center the form horizontally */
+    background-color: rgb(218, 218, 218);
+    border-radius: 20px;
+  }
+  
+  .Contact h2 {
+    margin-bottom: 1rem; /* Bottom margin for the heading */
+  }
+  
+  .Contact label {
+    font-weight: bold; /* Make labels bold */
+    margin-bottom: 0.5rem; /* Bottom margin for labels */
+  }
+  
+  .Contact input,
+  .Contact textarea {
+    width: 100%; /* Make inputs and textarea full width */
+    padding: 0.5rem; /* Padding for inputs and textarea */
+    border-radius: 0.25rem; /* Rounded corners for inputs and textarea */
+    border: 1px solid #ccc; /* Border color */
+  }
+  
+  .Contact input:focus,
+  .Contact textarea:focus {
+    outline: none; /* Remove focus outline */
+    border-color: #007bff; /* Border color on focus */
+  }
+  
+  .Contact button {
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove button border */
+    border-radius: 50px; /* Rounded corners for button */
+    padding: 0.5rem 1rem; /* Padding for button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+
+  }
+  
+  .Contact button:hover {
+    background-color: #0056b3; /* Darker background color on hover */
+  }
+
+
+
+
+  .heart{
+    color: red;
+    color-scheme: red;
+  }
+  
