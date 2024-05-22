@@ -19,7 +19,11 @@ justify-content: space-between;
 }
 
 /* icon styling end */
+.col {
 
+  
+  width: 70%;
+}
 
 /* image styling */
 .image {
@@ -55,10 +59,18 @@ hr{
     color: black;
 }
 
-.experience.row.row-cols-1.row-cols-md-5.g-5 {
-    width: 100%;
+.portfolio{
+  margin-left: 5%;
 }
+.experience.space-x-10 {
+  width: 100%;
+  margin-left: 5%;
+  /* justify-content: space-between; */
+}
+.col-xcard{
+  width: 50%;
 
+}
 /* Media screen for home content that can show in mobile divice*/
 /* Media query for devices with a max width of 320px */
 @media only screen and (max-width: 320px) {
@@ -149,7 +161,15 @@ img.w-full {
       order: 2;
   }
 
-      .image.md\:w-1\/2.mb-4.md\:mb-0 {  {/* for set proper image in mobile device*/}
+  /*card width*/
+  
+  .col {
+    width: 45%;
+    margin-left: 27px;
+    margin-top: 15px;
+}
+
+      .image.md\:w-1\/2.mb-4.md\:mb-0 {  
     margin-right: 100%;
     width: 111%;
 }
